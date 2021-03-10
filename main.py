@@ -12,7 +12,7 @@ for event in longpoll.listen():
     api.messages.send(
 
         peer_id=event['peer_id'],
-        message=f"{name}, и это ты высрал?",
+        message=f"{name}, и это ты написал?",
         random_id=random.randint(0, 99999999999),
         attachment='photo36066442_457241712_66edd3998cfe69ef1b'
     )
